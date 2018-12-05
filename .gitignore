@@ -1,0 +1,12 @@
+# Maven artifacts
+**/target
+
+# Eclipse STS artifacts
+**/.settings/**
+**/.classpath
+**/.project
+
+# Specific to project
+conf/**
+logs/**
+.springBeans
