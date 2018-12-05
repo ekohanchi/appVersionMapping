@@ -46,7 +46,7 @@ public class EncryptController {
             log.error(e.getMessage());
         }
 
-        if (serverHostName.contains("laxltmbp-ek1.socal.rr.com")) {
+        if (serverHostName.contains(applicationConfig.getServerHostName())) {
             log.info("Getting the textEncryptor...");
             TextEncryptor textEncryptor =
                     Encryptors.text(applicationConfig.getEncryptPassword(), applicationConfig.getEncryptSalt());

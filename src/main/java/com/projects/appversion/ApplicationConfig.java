@@ -47,6 +47,9 @@ public class ApplicationConfig {
     @Value("${security.encryptSalt}")
     private String encryptSalt;
     
+    @Value("${server.hostname}")
+    private String serverHostname;
+    
     public int getAppPort() {
         return serverPort;
     }
@@ -57,6 +60,10 @@ public class ApplicationConfig {
     
     public String getEncryptSalt() {
         return encryptSalt;
+    }
+    
+    public String getServerHostName() {
+    	return serverHostname;
     }
 
     @Bean
